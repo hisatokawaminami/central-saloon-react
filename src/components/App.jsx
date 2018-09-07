@@ -18,6 +18,8 @@ function App(){
             padding: 0;
             height: 100%;
             width: 100%;
+            min-height: 100vh;
+
           }
           `}
       </style>
@@ -25,10 +27,12 @@ function App(){
       <div className="body">
         <Header/>
 
-
+        <Switch>
 
         <Home/>
         <ShowList/>
+
+        </Switch>
 
         <Footer/>
       </div>
