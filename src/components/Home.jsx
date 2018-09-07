@@ -16,12 +16,12 @@ function Home(){
           `}
       </style>
 
-        <div>
-          <h1>test home????</h1>
-          <h1>test home????</h1>
+      <div>
+        <h1>test home????</h1>
+        <h1>test home????</h1>
 
 
-        </div>
+      </div>
     </div>
   );
 }

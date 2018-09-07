@@ -28,17 +28,17 @@ function Footer(){
           }
           `}
       </style>
-        <div className="footer">
-          <p>
+      <div className="footer">
+        <p>
             THE CENTRAL SALOON &diams;
             207 1ST AVE SOUTH SEATTLE, WA &diams;
             (206) 622-0209 &diams;
             OPEN 11AM-2AM DAILY
-          </p>
+        </p>
 
 
 
-        </div>
+      </div>
     </div>
   );
 }
