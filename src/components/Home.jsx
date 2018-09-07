@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from './Header';
-import Home from './Home';
-import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
 
-function App(){
+function Home(){
   return (
     <div className="home">
       <style jsx>{`
-          .body {
+          body {
             background: url(${background})no-repeat top center fixed;
             background-size: cover;
             margin: 0;
@@ -18,14 +15,16 @@ function App(){
           }
           `}
       </style>
+      <body className="body">
+        <div>
+          <h1>test home????</h1>
+            <h1>test home????</h1>
+          
 
-<div className="body">
-      <Header/>
-      <Home/>
-      <ShowList/>
-    </div>
+        </div>
+      </body>
     </div>
   );
 }
 
-export default App;
+export default Home;
