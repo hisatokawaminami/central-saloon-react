@@ -20,11 +20,11 @@ function Show(props){
     </div>
   );
 }
-  Show.propTypes = {
-    date: PropTypes.string.isRequired,
-    headliner: PropTypes.string.isRequired,
-    opener: PropTypes.string,
-    time: PropTypes.string,
-    price: PropTypes.string
-  };
+Show.propTypes = {
+  date: PropTypes.string.isRequired,
+  headliner: PropTypes.string.isRequired,
+  opener: PropTypes.string,
+  time: PropTypes.string,
+  price: PropTypes.string
+};
 export default Show;

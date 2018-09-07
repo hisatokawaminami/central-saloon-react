@@ -19,11 +19,11 @@ function App(){
           `}
       </style>
 
-<div className="body">
-      <Header/>
-      <Home/>
-      <ShowList/>
-    </div>
+      <div className="body">
+        <Header/>
+        <Home/>
+        <ShowList/>
+      </div>
     </div>
   );
 }
