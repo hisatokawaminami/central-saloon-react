@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 function Header(){
   return (
@@ -37,6 +38,7 @@ function Header(){
           }
           .nav-list{
             text-align: center;
+            color: white;
           }
           `}
 
@@ -45,11 +47,11 @@ function Header(){
         <img src={logo} className="logo"/>
         <div className="nav-list">
 
-          <p>HOME</p>
-          <p>EVENTS</p>
-          <p>HISTORY</p>
-          <p>MENU</p>
-          <p>CONTACT</p>
+          <Link to="/">HOME</Link><br/>
+          <Link to="/events">EVENTS</Link><br/>
+          <Link to="/history">HISTORY</Link><br/>
+          <Link to="/menu">MENU</Link><br/>
+          <Link to="/contact">CONTACT</Link>
         </div>
       </div>
 

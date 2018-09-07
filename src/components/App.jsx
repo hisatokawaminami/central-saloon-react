@@ -4,6 +4,10 @@ import Home from './Home';
 import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
 import Footer from './Footer';
+import Events from './Events';
+import Menu from './Menu';
+import Contact from './Contact';
+import History from './History';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -31,7 +35,7 @@ function App(){
 
           <Route exact path='/' component={Home} />
           <Route path='/events' component={ShowList} />
-          <ShowList/>
+
 
         </Switch>
 
