@@ -38,7 +38,6 @@ function Header(){
           }
           .nav-list{
             text-align: center;
-            color: white;
           }
           `}
 
@@ -47,11 +46,11 @@ function Header(){
         <img src={logo} className="logo"/>
         <div className="nav-list">
 
-          <Link to="/">HOME</Link><br/>
-          <Link to="/events">EVENTS</Link><br/>
-          <Link to="/history">HISTORY</Link><br/>
-          <Link to="/menu">MENU</Link><br/>
-          <Link to="/contact">CONTACT</Link>
+          <Link to="/">HOME</Link>
+          <Link to="/events">EVENTS</Link>
+          <p>HISTORY</p>
+          <p>MENU</p>
+          <p>CONTACT</p>
         </div>
       </div>
 

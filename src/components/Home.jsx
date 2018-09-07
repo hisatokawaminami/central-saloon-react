@@ -15,14 +15,13 @@ function Home(){
           }
           `}
       </style>
-      <body className="body">
+
         <div>
           <h1>test home????</h1>
           <h1>test home????</h1>
-          
+
 
         </div>
-      </body>
     </div>
   );
 }

@@ -28,7 +28,6 @@ function Footer(){
           }
           `}
       </style>
-      <body className="body">
         <div className="footer">
           <p>
             THE CENTRAL SALOON &diams;
@@ -40,7 +39,6 @@ function Footer(){
 
 
         </div>
-      </body>
     </div>
   );
 }

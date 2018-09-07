@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Home from './Home';
+import { Switch, Route } from 'react-router-dom';
+
 import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
 import Footer from './Footer';
@@ -9,7 +11,6 @@ import Menu from './Menu';
 import Contact from './Contact';
 import History from './History';
 
-import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
@@ -32,11 +33,8 @@ function App(){
         <Header/>
 
         <Switch>
-
           <Route exact path='/' component={Home} />
           <Route path='/events' component={ShowList} />
-
-
         </Switch>
 
         <Footer/>
