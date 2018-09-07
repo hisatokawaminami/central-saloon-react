@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from './Header';
-import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
 
-import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
+
+import Header from './Header';
+import Home from './Home';
+import ShowList from './ShowList';
 import Footer from './Footer';
 import Events from './Events';
 import Menu from './Menu';
 import Contact from './Contact';
 import History from './History';
+import Error404 from './Error404';
 
 
 function App(){
@@ -35,6 +37,11 @@ function App(){
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/events' component={ShowList} />
+          <Route path='/history' component={History} />
+          <Route path='/menu' component={Menu} />
+          <Route path='/contact' component={Contact} />
+          <Route component={Error404} />
+
         </Switch>
 
         <Footer/>
