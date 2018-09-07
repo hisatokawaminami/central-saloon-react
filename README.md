@@ -29,3 +29,7 @@ Clone from:https://github.com/hisatokawaminami/central-saloon-react.git
 ## Development server
 Run `npm install` in a terminal
 Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+
+
+## README Prompts
+1. I found that placing background image is tricky. I was able to display the image with `url(${background})` but it was only displaying for the lines that have contents in. Like, it was only showing the first line 'test' when I first deployed. I put a bunch on margin for a footer, so it kind look ok, but I still need to figure this out.
