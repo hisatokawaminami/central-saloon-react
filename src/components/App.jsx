@@ -3,6 +3,7 @@ import Header from './Header';
 import Home from './Home';
 import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
+import Footer from './Footer';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -25,9 +26,11 @@ function App(){
         <Header/>
 
 
+
         <Home/>
         <ShowList/>
 
+        <Footer/>
       </div>
     </div>
   );
