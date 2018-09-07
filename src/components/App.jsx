@@ -4,6 +4,8 @@ import Home from './Home';
 import ShowList from './ShowList';
 import background from '../assets/images/background.jpg';
 
+import { Switch, Route } from 'react-router-dom';
+
 function App(){
   return (
     <div className="home">
@@ -21,8 +23,11 @@ function App(){
 
       <div className="body">
         <Header/>
+
+
         <Home/>
         <ShowList/>
+
       </div>
     </div>
   );
