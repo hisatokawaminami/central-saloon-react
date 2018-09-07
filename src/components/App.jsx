@@ -29,8 +29,9 @@ function App(){
 
         <Switch>
 
-        <Home/>
-        <ShowList/>
+          <Route exact path='/' component={Home} />
+          <Route path='/events' component={ShowList} />
+          <ShowList/>
 
         </Switch>
 
