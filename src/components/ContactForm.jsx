@@ -1,4 +1,5 @@
 import React from 'react';
+import map from '../assets/images/map.png';
 
 function ContactForm(){
   return (
@@ -12,10 +13,15 @@ function ContactForm(){
           }
           .card{
             background-color: #f4e9cf;
+            margin-bottom: 0px;
           }
           .contactInfo{
-          
+
           }
+          .map {
+            height: 350px;
+          }
+
           `}
         </style>
 
@@ -84,6 +90,8 @@ function ContactForm(){
                 (206) 622-0209
                 207 1ST AVENUE SOUTH, SEATTLE, WA 98104
                 OPEN 11AM-2AM DAILY</p>
+                <img className="map" src={map}/>
+
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import background from '../assets/images/background.jpg';
+import { Link } from 'react-router-dom';
 
 function Footer(){
   return (
@@ -24,7 +25,6 @@ function Footer(){
  flex: 1 0 auto;
    padding: var( — space) var( — space) 0;
    width: 100%;
-   margin-top: 500px;
           }
           `}
       </style>
@@ -36,6 +36,7 @@ function Footer(){
             OPEN 11AM-2AM DAILY
         </p>
 
+      <Link to="/showform">Admin</Link>
 
 
       </div>
