@@ -7,7 +7,6 @@ import Header from './Header';
 import Home from './Home';
 import ShowList from './ShowList';
 import Footer from './Footer';
-import Events from './Events';
 import Menu from './Menu';
 import Contact from './Contact';
 import History from './History';

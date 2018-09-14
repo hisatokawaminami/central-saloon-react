@@ -32,25 +32,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        enforce: "pre",
-        loader: "eslint-loader",
-        exclude: /node_modules/,
-        options: {
-          emitWarning: true,
-          configFile: "./.eslintrc.json"
-          }
-        },
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
       {
         test: /\.(png|gif|jp(e*)g|svg)$/,
         use: {
           loader: 'url-loader',
           options: {
             limit: 8000,
-            name: 'images/[hash]-[name].[exe]'
+            name: 'images/[hash]-[name].[ext]'
           }
         }
       },
+
       {
         test: /\.jsx?$/,
         loader: "babel-loader",
@@ -61,12 +56,11 @@ module.exports = {
             "react",
           ],
           plugins: [
-            "react-hot-loader/babel",
-            "styled-jsx/babel"
+            "react-hot-loader/babel"
           ]
         }
       }
-    ]
+    ],
   },
 
   plugins: [
@@ -75,7 +69,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Central Saloon',
+      title: 'Tamagotchi React',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
