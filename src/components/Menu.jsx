@@ -2,7 +2,21 @@ import React from 'react';
 
 function Menu(){
   return (
-    <h3>
+    <div>
+      <style jsx>{`
+
+          h1 {
+            margin-top: 200px;
+            color: white;
+
+          }
+          .card{
+            background-color: #f4e9cf;
+          }
+          `}
+      </style>
+      <h1>MENU</h1>
+    <h3 className="card" >
       $5 HAPPY HOUR (4-7pm)
 HOUSE SALAD
 MOZZARELLA STYX
@@ -149,7 +163,7 @@ Add Bacon 2 — Add Cheese 1
 
 
     </h3>
-
+</div>
   );
 }
 

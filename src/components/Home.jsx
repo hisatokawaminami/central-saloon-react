@@ -15,10 +15,12 @@ function Home(){
 
       <div>
         <div className="home-head">
+          <div className="head">
 
           <h3>HOME OF THE</h3>
           <h1>SEATTLE SOUND</h1>
           <p>SEATTLE’S BEST NEW MUSIC IN ITS OLDEST SALOON</p>
+        </div>
         </div>
         <ShowList />
       </div>

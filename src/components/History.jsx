@@ -3,8 +3,20 @@ import React from 'react';
 function History(){
   return (
     <div>
+      <style jsx>{`
+
+          h1 {
+            margin-top: 200px;
+            color: white;
+          }
+            .card{
+              background-color: #f4e9cf;
+            }
+          `}
+      </style>
+    <div>
       <h1>HISTORY</h1>
-      <h3>What’s the back story on the “Seattle Sound” at the Central?
+      <h3 className="card">What’s the back story on the “Seattle Sound” at the Central?
 
 In 10 words, it’s Seattle’s best, new bands at the city’s oldest saloon.
 
@@ -17,6 +29,7 @@ Guy Curtis has been running the place since the 70s. Eric Manegold recently join
 While you're browsing, check out this amazing article on our Talent Buyer Michael Gill. He's really been making waves in Seattle's music scene with The Central as ground zero http://archive.seattleweekly.com/home/962878-129/the-central-saloon-is-cool-again
       </h3>
     </div>
+  </div>
   );
 }
 

@@ -28,6 +28,17 @@ var masterShowList = [
 function ShowList(){
   return (
     <div>
+      <style jsx>{`
+
+          .show-head {
+            margin-top: 200px;
+            color: white;
+
+          }
+          `}
+      </style>
+    <div>
+      <h1 className="show-head">EVENTS</h1>
       <hr/>
       {masterShowList.map((show, index)=>
         <Show
@@ -40,6 +51,7 @@ function ShowList(){
         />
       )}
     </div>
+  </div>
   );
 }
 
