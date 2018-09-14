@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import background from '../assets/images/background.jpg';
 
 import Header from './Header';
@@ -13,6 +13,7 @@ import History from './History';
 import Error404 from './Error404';
 import Background from './Background';
 import ContactForm from './ContactForm';
+
 
 function App(){
   return (
