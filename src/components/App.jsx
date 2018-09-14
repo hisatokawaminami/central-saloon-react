@@ -14,6 +14,7 @@ import Error404 from './Error404';
 import Background from './Background';
 import ContactForm from './ContactForm';
 import ShowForm from './ShowForm';
+import ShowControl from './ShowControl';
 
 function App(){
   return (
@@ -42,7 +43,7 @@ function App(){
           <Route path='/history' component={History} />
           <Route path='/menu' component={Menu} />
           <Route path='/contact' component={ContactForm} />
-          <Route path='/showform' component={ShowForm} />
+          <Route path='/showform' component={ShowControl} />
           <Route component={Error404} />
 
         </Switch>
