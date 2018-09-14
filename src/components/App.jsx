@@ -12,7 +12,7 @@ import Menu from './Menu';
 import Contact from './Contact';
 import History from './History';
 import Error404 from './Error404';
-
+import Background from './Background';
 
 function App(){
   return (
@@ -33,6 +33,7 @@ function App(){
 
       <div className="body">
         <Header/>
+        <Background />
 
         <Switch>
           <Route exact path='/' component={Home} />
