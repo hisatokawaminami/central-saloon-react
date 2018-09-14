@@ -12,6 +12,7 @@ import Contact from './Contact';
 import History from './History';
 import Error404 from './Error404';
 import Background from './Background';
+import ContactForm from './ContactForm';
 
 function App(){
   return (
@@ -39,7 +40,7 @@ function App(){
           <Route path='/events' component={ShowList} />
           <Route path='/history' component={History} />
           <Route path='/menu' component={Menu} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/contact' component={ContactForm} />
           <Route component={Error404} />
 
         </Switch>
