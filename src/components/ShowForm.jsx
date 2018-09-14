@@ -1,6 +1,15 @@
 import React from 'react';
 
 function ShowForm() {
+  let _date = null;
+  let _headliner = null;
+  let _opener = null;
+  let _time = null;
+  let _price = null;
+
+  function handleSubmission(event) {
+    event.preventDefault();
+  }
   return (
     <div >
       <style jsx>{`
@@ -19,32 +28,37 @@ function ShowForm() {
       <h1>Add New Show</h1>
         <div className="card">
 
-      <form>
+      <form onSubmit={handleSubmission}>
         <input
           type='text'
           id='date'
           placeholder='Date'
-        /><br/>
+          ref={(input) => {_date = input;}}/>
+        <br/>
         <input
           type='text'
           id='headliner'
           placeholder='Headliner'
-        /><br/>
+          ref={(input) => {_headliner = input;}}/>
+        <br/>
         <input
           type='text'
           id='opener'
           placeholder='Opener'
-        /><br/>
+          ref={(input) => {_opener = input;}}/>
+        <br/>
         <input
           type='text'
           id='time'
           placeholder='Door Time'
-        /><br/>
+          ref={(input) => {_time = input;}}/>
+        <br/>
         <input
           type='text'
           id='price'
           placeholder='Ticket Price'
-        /><br/>
+          ref={(input) => {_price = input;}}/>
+        <br/>
       <button type='submit'>Save</button>
       </form>
 </div>
