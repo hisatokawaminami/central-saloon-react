@@ -1,5 +1,6 @@
 import React from 'react';
 import background from '../assets/images/background.jpg';
+import ShowList from './ShowList';
 
 function Home(){
   return (
@@ -13,14 +14,19 @@ function Home(){
             height: 100%;
             width: 100%;
           }
+          .home-head {
+            color: white;
+          }
           `}
       </style>
 
       <div>
-        <h1>test home????</h1>
-        <h1>test home????</h1>
-
-
+        <div className="home-head">
+          <h3>HOME OF THE</h3>
+          <h1>SEATTLE SOUND</h1>
+          <p>SEATTLE’S BEST NEW MUSIC IN ITS OLDEST SALOON</p>
+        </div>
+        <ShowList />
       </div>
     </div>
   );
