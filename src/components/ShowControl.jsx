@@ -1,6 +1,7 @@
 import React from 'react';
 import AdminConfirmation from './AdminConfirmation';
 import ShowForm from './ShowForm';
+import PropTypes from 'prop-types';
 
 class ShowControl extends React.Component {
 
@@ -20,9 +21,9 @@ class ShowControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <ShowForm />;
-      } else {
-        currentlyVisibleContent = <AdminConfirmation onConfirmation={this.handleConfirmation} />;
+      currentlyVisibleContent = <ShowForm onNewShowCreation={this.props.onNewShowCreation} />;
+    } else {
+      currentlyVisibleContent = <AdminConfirmation onConfirmation={this.handleConfirmation} />;
 
     }
     return (
@@ -38,16 +39,20 @@ class ShowControl extends React.Component {
               }
             `}
         </style>
-      <div>
-        <h1>controller</h1>
-        <div className="card">
+        <div>
+          <h1>controller</h1>
+          <div className="card">
 
-        {currentlyVisibleContent}
+            {currentlyVisibleContent}
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     );
   }
 }
+
+ShowControl.propTypes = {
+  onNewShowCreation: PropTypes.func
+};
 
 export default ShowControl;

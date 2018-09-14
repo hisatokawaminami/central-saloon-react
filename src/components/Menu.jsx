@@ -16,7 +16,7 @@ function Menu(){
           `}
       </style>
       <h1>MENU</h1>
-    <h3 className="card" >
+      <h3 className="card" >
       $5 HAPPY HOUR (4-7pm)
 HOUSE SALAD
 MOZZARELLA STYX
@@ -162,8 +162,8 @@ Lettuce, Tomato, Onion, Pickle, Relish
 Add Bacon 2 — Add Cheese 1
 
 
-    </h3>
-</div>
+      </h3>
+    </div>
   );
 }
 

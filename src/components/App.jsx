@@ -16,42 +16,59 @@ import ContactForm from './ContactForm';
 import ShowForm from './ShowForm';
 import ShowControl from './ShowControl';
 
-function App(){
-  return (
-    <div className="home">
-      <style jsx>{`
-          .body {
-            background: url(${background})no-repeat top center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            min-height: 100vh;
+class App extends React.Component {
 
-          }
-          `}
-      </style>
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterShowList: []
+    };
+    this.handleAddShowToList = this.handleAddShowToList.bind(this);
+  }
 
-      <div className="body">
-        <Header/>
-        <Background />
+  handleAddShowToList(newShow){
+    var newMasterShowList = this.state.masterShowList.slice();
+    newMasterShowList.push(newShow);
+    this.setState({masterShowList: newMasterShowList});
+  }
 
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/events' component={ShowList} />
-          <Route path='/history' component={History} />
-          <Route path='/menu' component={Menu} />
-          <Route path='/contact' component={ContactForm} />
-          <Route path='/showform' component={ShowControl} />
-          <Route component={Error404} />
+  render(){
+    return (
+      <div className="home">
+        <style jsx>{`
+            .body {
+              background: url(${background})no-repeat top center fixed;
+              background-size: cover;
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+              min-height: 100vh;
 
-        </Switch>
+            }
+            `}
+        </style>
 
-        <Footer/>
+        <div className="body">
+          <Header/>
+          <Background />
+
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/events' render={()=><ShowList showList={this.state.masterShowList} />} />
+            <Route path='/history' component={History} />
+            <Route path='/menu' component={Menu} />
+            <Route path='/contact' component={ContactForm} />
+            <Route path='/showform' render={()=><ShowControl onNewShowCreation={this.handleAddShowToList} />} />
+            <Route component={Error404} />
+
+          </Switch>
+
+          <Footer/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

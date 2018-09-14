@@ -15,17 +15,17 @@ function AdminConfirmation(props) {
             }
           `}
       </style>
-    <div>
-      <h1>Admin Confirmation</h1>
-      <div className="card">
+      <div>
+        <h1>Admin Confirmation</h1>
+        <div className="card">
 
-      <h3 >Are you authorized to update the calendar?<br/>
-        (wish list:login)</h3>
-      <button onClick={props.onConfirmation}>Yes(Login)</button>
+          <h3 >Are you authorized to update the calendar?<br/>
+        (wish list: Login Form)</h3>
+          <button onClick={props.onConfirmation}>Yes(Login)</button>
 
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
   );
 }
 

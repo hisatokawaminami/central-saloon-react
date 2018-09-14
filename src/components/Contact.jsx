@@ -16,8 +16,8 @@ function Contact() {
           `}
       </style>
 
-    <h1>Contact works</h1>
-    <div className="card">contact us</div>
+      <h1>Contact works</h1>
+      <div className="card">contact us</div>
     </div>
   );
 }
