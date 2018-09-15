@@ -18,7 +18,7 @@ function ShowForm(props) {
     _time.value = '';
     _price.value = '';
   }
-  
+
   return (
     <div >
       <style jsx>{`
@@ -34,7 +34,7 @@ function ShowForm(props) {
           `}
       </style>
       <div>
-        <h1>Add New Show</h1>
+        <h2>Add New Show</h2>
         <div className="card">
 
           <form onSubmit={handleSubmission}>

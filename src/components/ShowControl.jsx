@@ -40,7 +40,7 @@ class ShowControl extends React.Component {
             `}
         </style>
         <div>
-          <h1>controller</h1>
+          <h1>ADMIN CONFIRMATION</h1>
           <div className="card">
 
             {currentlyVisibleContent}

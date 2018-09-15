@@ -18,7 +18,7 @@ function Background() {
       </style>
 
       <div>
-        <body><br/></body>
+      
       </div>
     </div>
   );
