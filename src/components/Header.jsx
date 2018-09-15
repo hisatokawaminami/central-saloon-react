@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
+import instagramLogo from '../assets/images/instagram.png';
+import facebookLogo from '../assets/images/facebook.png';
+import twitterLogo from '../assets/images/twitter.png';
 import { Link } from 'react-router-dom';
 
 function Header(){
@@ -39,20 +42,37 @@ function Header(){
           .nav-list{
             text-align: center;
           }
+          .socialMediaLogo {
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+            align-items: center;
+            margin: 5px;
+          }
+          .link {
+            color: white;
+
+          }
           `}
 
       </style>
       <div>
         <img src={logo} className="logo"/>
-        <div className="nav-list">
+        <div className="nav-list" >
+          <br/><br/>
+          <Link to="/" className="link">HOME</Link><br/><br/>
+          <Link to="/events" className="link">EVENTS</Link><br/><br/>
+          <Link to="/history" className="link">HISTORY</Link><br/><br/>
+          <Link to="/menu"className="link">MENU</Link><br/><br/>
+          <Link to="/contact"className="link">CONTACT</Link><br/><br/><br/>
 
-          <Link to="/">HOME</Link><br/>
-          <Link to="/events">EVENTS</Link><br/>
-          <Link to="/history">HISTORY</Link><br/>
-          <Link to="/menu">MENU</Link><br/>
-          <Link to="/contact">CONTACT</Link><br/>
-        </div>
+
+
+      <img src={instagramLogo} className="socialMediaLogo"/>
+      <img src={facebookLogo} className="socialMediaLogo"/>
+      <img src={twitterLogo} className="socialMediaLogo"/>
       </div>
+    </div>
 
     </div>
   );
