@@ -22,7 +22,6 @@ function Home(){
             <p>SEATTLE’S BEST NEW MUSIC IN ITS OLDEST SALOON</p>
           </div>
         </div>
-        <ShowList />
       </div>
     </div>
   );

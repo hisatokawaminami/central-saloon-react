@@ -37,3 +37,5 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The 
 1. I found that placing background image is tricky. I was able to display the image with `url(${background})` but it was only displaying for the lines that have contents in. Like, it was only showing the first line 'test' when I first deployed. I put a bunch on margin for a footer, so it kind look ok, but I still need to figure this out.
 
 2. I had a issue when I tried to create routes. I learned that `<html>`, `<head>`, or `<body>` tags gives error. I had `<body>` tag when I was trying to figure out background problem.
+
+3. It took me forever to figure out `TypeError: Cannot read property 'map' of undefined` error when I changed `masterShowList` to `props.showList` in ShowList. After going through every single line, I found that `<ShowList />` was rendered in `Home`component.
