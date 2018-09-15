@@ -68,11 +68,11 @@ function Header(){
 
 
 
-      <img src={instagramLogo} className="socialMediaLogo"/>
-      <img src={facebookLogo} className="socialMediaLogo"/>
-      <img src={twitterLogo} className="socialMediaLogo"/>
+          <img src={instagramLogo} className="socialMediaLogo"/>
+          <img src={facebookLogo} className="socialMediaLogo"/>
+          <img src={twitterLogo} className="socialMediaLogo"/>
+        </div>
       </div>
-    </div>
 
     </div>
   );

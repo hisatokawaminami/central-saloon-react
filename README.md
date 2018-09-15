@@ -39,3 +39,5 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The 
 2. I had a issue when I tried to create routes. I learned that `<html>`, `<head>`, or `<body>` tags gives error. I had `<body>` tag when I was trying to figure out background problem.
 
 3. It took me forever to figure out `TypeError: Cannot read property 'map' of undefined` error when I changed `masterShowList` to `props.showList` in ShowList. After going through every single line, I found that `<ShowList />` was rendered in `Home`component.
+
+4. It gets `onNewShowCreation' is missing in props validation` in ShowForm, but I couldn't figure out what the cause is.

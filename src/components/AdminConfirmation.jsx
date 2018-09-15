@@ -16,7 +16,7 @@ function AdminConfirmation(props) {
           `}
       </style>
       <div>
-ß        <div className="card">
+        <div className="card">
 
           <h3 >Are you authorized to update the calendar?<br/>
         (wish list: Login Form)</h3>
